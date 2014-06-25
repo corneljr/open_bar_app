@@ -1,2 +1,7 @@
-<h1>Bars#index</h1>
-<p>Find me in app/views/bars/index.html.erb</p>
+<h1>Bars</h1>
+<% @bars.each do |bar| %>
+  <p><%= bar[:name] %> - $<%= bar.address %> 
+    <%= link_to "Show", "/bars/#{bar.id}" %> 
+  </p>
+<% end %>
+
