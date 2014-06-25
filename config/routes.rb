@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-	resources :bars
+  root 'bars#index'
+  resources :bars do
+    resources :reviews
+    resources :reservations
+  end
 end
