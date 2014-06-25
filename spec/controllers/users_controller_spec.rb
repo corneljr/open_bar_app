@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe UsersController do
 
+<<<<<<< HEAD
+=======
   describe "GET 'new'" do
     it "returns http success" do
       get 'new'
@@ -37,4 +39,5 @@ describe UsersController do
     end
   end
 
+>>>>>>> 3543017f105cef324c3a77805e71f3bf8416e7a3
 end

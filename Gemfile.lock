@@ -30,6 +30,7 @@ GEM
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
     awesome_print (1.2.0)
+    bcrypt (3.1.7)
     bourbon (3.2.3)
       sass (~> 3.2)
       thor
@@ -203,6 +204,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  bcrypt
   bourbon (~> 3.2.1)
   capybara-webkit (>= 1.0.0)
   coffee-rails

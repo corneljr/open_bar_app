@@ -19,6 +19,7 @@ gem 'simple_form'
 gem 'title'
 gem 'uglifier'
 gem 'unicorn'
+gem 'bcrypt'
 
 group :development do
   gem 'foreman'

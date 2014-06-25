@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20140625190347) do
+=======
 ActiveRecord::Schema.define(version: 20140625181109) do
+>>>>>>> 3543017f105cef324c3a77805e71f3bf8416e7a3
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,7 +55,10 @@ ActiveRecord::Schema.define(version: 20140625181109) do
     t.string   "name"
     t.string   "email"
     t.string   "password_digest"
+<<<<<<< HEAD
+=======
     t.string   "type"
+>>>>>>> 3543017f105cef324c3a77805e71f3bf8416e7a3
     t.datetime "created_at"
     t.datetime "updated_at"
   end
