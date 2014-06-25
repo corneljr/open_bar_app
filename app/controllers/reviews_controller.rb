@@ -1,4 +1,5 @@
-class ReviewController < ApplicationController
+class ReviewsController < ApplicationController
+
   def new
   end
 
