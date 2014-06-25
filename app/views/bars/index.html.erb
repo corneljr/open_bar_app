@@ -1,0 +1,7 @@
+<h1>Bars</h1>
+<% @bars.each do |bar| %>
+  <p><%= bar[:name] %> - $<%= bar.address %> 
+    <%= link_to "Show", "/bars/#{bar.id}" %> 
+  </p>
+<% end %>
+

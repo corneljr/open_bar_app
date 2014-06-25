@@ -1,9 +1,14 @@
 require 'spec_helper'
 
-describe UsersController do
+describe BarsController do
 
-<<<<<<< HEAD
-=======
+  describe "GET 'index'" do
+    it "returns http success" do
+      get 'index'
+      response.should be_success
+    end
+  end
+
   describe "GET 'new'" do
     it "returns http success" do
       get 'new'
@@ -14,6 +19,13 @@ describe UsersController do
   describe "GET 'create'" do
     it "returns http success" do
       get 'create'
+      response.should be_success
+    end
+  end
+
+  describe "GET 'show'" do
+    it "returns http success" do
+      get 'show'
       response.should be_success
     end
   end
@@ -39,5 +51,4 @@ describe UsersController do
     end
   end
 
->>>>>>> 3543017f105cef324c3a77805e71f3bf8416e7a3
 end

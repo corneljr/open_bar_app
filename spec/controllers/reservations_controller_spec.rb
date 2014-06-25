@@ -1,9 +1,7 @@
 require 'spec_helper'
 
-describe UsersController do
+describe ReservationsController do
 
-<<<<<<< HEAD
-=======
   describe "GET 'new'" do
     it "returns http success" do
       get 'new'
@@ -32,6 +30,13 @@ describe UsersController do
     end
   end
 
+  describe "GET 'show'" do
+    it "returns http success" do
+      get 'show'
+      response.should be_success
+    end
+  end
+
   describe "GET 'destroy'" do
     it "returns http success" do
       get 'destroy'
@@ -39,5 +44,4 @@ describe UsersController do
     end
   end
 
->>>>>>> 3543017f105cef324c3a77805e71f3bf8416e7a3
 end
