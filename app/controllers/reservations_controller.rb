@@ -12,18 +12,14 @@ class ReservationsController < ApplicationController
     end
   end
 
-  def edit
-  end
-
-  def update
-  end
-
   def show
     @reservation = Reservation.find(params[:id])
     @bar = @reservation.bar
+
     if 
-    raise AuthenticationError
+      raise AuthenticationError
   end
+end
 
   def destroy
     @review = Review.find(params[:id])

@@ -6,6 +6,11 @@ class BarsController < ApplicationController
 
   def show
     @bar = Bar.find(params[:id])
+
+
+    if current_user
+      @reservation = @bar.reservation.build
+    end
   end
 
   def new

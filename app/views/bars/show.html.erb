@@ -2,3 +2,32 @@
 <h3><%=@bar.name%> - $<%=@bar.address%> </h3>
 	<p>Capacity:<%= @bar.capacity %></p>
 	<p>Description:<%= @bar.description %></p>
+
+
+	<h4>Reservation</h4>
+
+  <%= form_for([@bar, @reservation]) do |f| %>
+    <% if @reservation.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@reservation.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+        <ul>
+        <% @reservation.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :start_time %><br />
+      <%= f.datetime_field :start_time %>
+    </div>
+    <div class="field">
+    	<%= f.label :capacity %><br />
+    	<%= f.number_field :capacity %><br />
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
